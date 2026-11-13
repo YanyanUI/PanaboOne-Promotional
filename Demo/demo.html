@@ -10,23 +10,52 @@
 <body>
     <header class="demo-header">
         <a class="demo-brand" href="index.html" aria-label="PanaboOne home">
-            <img src="/Assets/Logo-v2.png" alt="panaboOne logo">
+            <img src="../Assets/Logo-v2.png" alt="">
             <span>Panabo<strong>One</strong></span>
         </a>
-        <a class="back-link" href="/index.html"><span aria-hidden="true">&larr;</span> Back to home</a>
+        <a class="back-link" href="../index.html"><span aria-hidden="true">&larr;</span> Back to home</a>
     </header>
-    <main>
+    <main class="demo-main">
         <section class="demo-content" aria-labelledby="demo-heading">
-            <p class="demo-eyebrow">See PanaboOne in action</p>
-            <h1 id="demo-heading">A quick guide to using the platform</h1>
-            <p class="demo-intro">Watch the demonstration to see how PanaboOne helps local businesses showcase their products and connect with customers.</p>
-            <div class="video-frame">
-                <video controls playsinline preload="metadata" aria-label="PanaboOne platform demonstration video">
-                <source src="/Assets/PanaboOne-demo-h264.mp4" type="video/mp4">
-                    Your browser does not support HTML video. Please try opening this page in a modern browser.
-                </video>
+            <div class="demo-copy">
+                <p class="demo-eyebrow"><span aria-hidden="true"></span> Platform walkthrough</p>
+                <h1 id="demo-heading">Bring your business <span>closer to customers.</span></h1>
+                <p class="demo-intro">Take a look at how PanaboOne helps local businesses showcase their storefront, products, and promotions in one place.</p>
+                <ul class="demo-highlights" aria-label="What you can explore">
+                    <li>Digital storefronts</li>
+                    <li>Product discovery</li>
+                    <li>Local promotions</li>
+                </ul>
+                <a class="demo-cta" href="https://panaboone.vercel.app/CreateAccount/createAccount.html" target="_blank" rel="noopener noreferrer">Get started with PanaboOne <span aria-hidden="true">&rarr;</span></a>
             </div>
-            <a class="demo-cta" href="https://panaboone.vercel.app/CreateAccount/createAccount.html" target="_blank" rel="noopener noreferrer">Get started with PanaboOne <span aria-hidden="true">&rarr;</span></a>
+            <div class="video-showcase">
+                <div class="video-card">
+                    <div class="video-toolbar">
+                        <div class="video-brand-mark" aria-hidden="true">P</div>
+                        <div class="video-toolbar-copy">
+                            <strong>PanaboOne</strong>
+                            <span>Platform overview</span>
+                        </div>
+                        <span class="video-badge"><span aria-hidden="true"></span> Watch now</span>
+                    </div>
+                    <div class="video-frame">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2085070168881008%2F&show_text=false&width=560&t=0"
+                        title="PanaboOne platform walkthrough video"
+                        width="560" height="314" loading="lazy"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                    </div>
+                    <div class="video-caption">
+                        <div>
+                            <span class="video-caption-label">Made for local business</span>
+                            <p>Discover the tools to help your business get seen.</p>
+                        </div>
+                        <span class="video-caption-arrow" aria-hidden="true">&nearr;</span>
+                    </div>
+                </div>
+                <p class="video-note"><span aria-hidden="true">&#10003;</span> A closer look at growing with PanaboOne</p>
+            </div>
         </section>
     </main>
     <footer class="demo-footer">
