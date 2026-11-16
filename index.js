@@ -75,6 +75,39 @@ document.addEventListener('keydown', (event) => {
 const sectionsToReveal = [...document.querySelectorAll('main > section')];
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+const homeVideo = document.querySelector('.home-video-player');
+
+if (homeVideo) {
+    let isVideoVisible = false;
+
+    const syncHomeVideoPlayback = () => {
+        if (isVideoVisible) {
+            const playPromise = homeVideo.play();
+            if (playPromise) {
+                playPromise.catch((error) => {
+                    if (error.name !== 'AbortError') {
+                        console.error('Unable to play the PanaboOne promotional video.', error);
+                    }
+                });
+            }
+        } else {
+            homeVideo.pause();
+        }
+    };
+
+    if ('IntersectionObserver' in window) {
+        const homeVideoObserver = new IntersectionObserver(([entry]) => {
+            isVideoVisible = entry.isIntersecting;
+            syncHomeVideoPlayback();
+        }, { threshold: 0.2 });
+
+        homeVideoObserver.observe(homeVideo);
+    } else {
+        isVideoVisible = true;
+        syncHomeVideoPlayback();
+    }
+}
+
 if ('IntersectionObserver' in window && !motionPreference.matches) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
