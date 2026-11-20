@@ -9,35 +9,46 @@
 </head>
 <body>
     <header>
+        <!-- Navigation wrapper -->
         <div id="nav-container">
+            <!-- Brand link -->
             <a class="site-brand" href="#home" aria-label="PanaboOne home">
+                <!-- Brand logo -->
                 <img src="Assets/Logo-v2.png" alt="" id="logo">
                 <span style="font-family: Roboto; font-weight: bold; color: black;">Panabo<strong>One</strong></span>
             </a>
+            <!-- Navigation controls -->
             <div id="nav-menu-icon-container">
                 <nav id="nav" aria-label="Main navigation" aria-hidden="true">
+                    <!-- Navigation panel heading -->
                     <div class="nav-panel-heading">
                         <span>Explore PanaboOne</span>
                         <p>Discover how we help local businesses grow.</p>
                     </div>
                     <ul>
-                        <li><a href="#home"><img src="Assets/Home-icon.png" alt="">Home</a></li>
-                        <li><a href="#about"><img src="Assets/about-icon.png" alt="">About</a></li>
-                        <li><a href="#services"><img src="Assets/services-icon.png" alt="">Services</a></li>
-                        <li><a href="#contact"><img src="Assets/contact-icon.png" alt="">Contact</a></li>
+                        <li><a href="#home"><!-- Home icon --><img src="Assets/Home-icon.png" alt="">Home</a></li>
+                        <li><a href="#about"><!-- About icon --><img src="Assets/about-icon.png" alt="">About</a></li>
+                        <li><a href="#services"><!-- Services icon --><img src="Assets/services-icon.png" alt="">Services</a></li>
+                        <li><a href="#contact"><!-- Contact icon --><img src="Assets/contact-icon.png" alt="">Contact</a></li>
                     </ul>
                 </nav>
-                <a class="nav-cta" href="https://panaboone.vercel.app/CreateAccount/createAccount.html" target="_blank">Get Started <span aria-hidden="true">&rarr;</span></a>
+                <!-- Navigation call to action -->
+                <a class="nav-cta" href="https://yanyanui.github.io/PanaboOne/CreateAccount/createAccount.html" target="_blank">Get Started <span aria-hidden="true">&rarr;</span></a>
                 <button id="nav-btn" type="button" aria-label="Open navigation menu" aria-controls="nav" aria-expanded="false">
+                    <!-- Mobile menu icon -->
                     <img src="Assets/menu-icon-black.png" alt="" id="nav-menu-icon">
                 </button>
             </div>
         </div>
     </header>
+    <!-- Navigation overlay -->
     <button id="nav-overlay" type="button" aria-label="Close navigation menu" tabindex="-1" hidden></button>
     <main>
+        <!-- Home hero section -->
         <section id="home" class="sections">
+            <!-- Hero layout -->
             <div id="hero-cont">
+                <!-- Hero text -->
                 <div class="hero-copy">
                     <p class="hero-eyebrow">Advertise smarter. Sell faster.</p>
                     <h1>Bring your business closer to <span>local customers.</span></h1>
@@ -45,16 +56,22 @@
                         Showcase your store, products, and promotions in one place with PanaboOne,
                         a digital platform built to help local businesses grow.
                     </p>
+                    <!-- Hero actions -->
                     <div class="hero-actions">
-                        <a href="https://panaboone.vercel.app/CreateAccount/createAccount.html" target="_blank" id="CTA-btn">Get Started</a>
+                        <!-- Account link -->
+                        <a href="https://yanyanui.github.io/PanaboOne/CreateAccount/createAccount.html" target="_blank" id="CTA-btn">Get Started</a>
+                        <!-- Demo link -->
                         <a href="./Demo/demo.html" class="demo-button">Watch the platform demo <span aria-hidden="true">&rarr;</span></a>
-                        <a href="#services" class="hero-secondary-link">Explore our services <span aria-hidden="true">&rarr;</span></a>
                     </div>
                     <p class="hero-note">Made for small businesses in Panabo</p>
                 </div>
+                <!-- Hero visual -->
                 <div class="hero-visual" aria-label="Ways PanaboOne helps your business">
+                    <!-- Visual glow -->
                     <div class="hero-visual-glow"></div>
+                    <!-- Hero logo -->
                     <div class="hero-logo-wrap">
+                        <!-- Hero brand image -->
                         <img src="Assets/Logo-v2.png" alt="panaboOne logo">
                     </div>
                     <p class="hero-visual-title">Your business, ready to be discovered.</p>
@@ -66,6 +83,7 @@
                     <span class="hero-visual-tag">PanaboOne for local business</span>
                 </div>
             </div>  
+            <!-- Home video -->
             <div class="home-video-container">
                 <video
                     class="home-video-player"
@@ -82,15 +100,21 @@
             </div>
         </section>
 
+        <!-- About section -->
         <section id="about" class="sections">
+            <!-- About layout -->
             <div class="about-layout">
+                <!-- About image -->
                 <div class="about-visual">
+                    <!-- About team photo -->
                     <img src="Assets/inerview1.jpg" alt="PanaboOne team showcasing digital storefronts inside a local business">
+                    <!-- About image caption -->
                     <div class="about-visual-caption">
                         <span>Rooted in Panabo</span>
                         <strong>Local businesses and customers, closer together.</strong>
                     </div>
                 </div>
+                <!-- About text -->
                 <div class="about-copy">
                     <p class="about-eyebrow">About PanaboOne</p>
                     <h2>Local businesses deserve to be seen.</h2>
@@ -104,9 +128,11 @@
                         <li><span aria-hidden="true">02</span><span><strong>Showcase your offer</strong> with a digital storefront.</span></li>
                         <li><span aria-hidden="true">03</span><span><strong>Promote with purpose</strong> and grow your local reach.</span></li>
                     </ul>
+                    <!-- Services link -->
                     <a class="about-cta" href="#services">Explore PanaboOne services <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
+            <!-- Mission and vision -->
             <div class="about-purpose" aria-label="PanaboOne mission and vision">
                 <article class="purpose-card" aria-labelledby="mission-heading">
                     <h3 id="mission-heading">Our Mission</h3>
@@ -117,29 +143,38 @@
                     <p><em>A thriving Panabo City economy where every business—big or small—has the opportunity to grow and endure.</em></p>
                 </article>
             </div>
+            <!-- Founders section -->
             <div class="founders-section" aria-labelledby="founders-heading">
+                <!-- Founders heading -->
                 <div class="founders-heading">
                     <p class="about-eyebrow">The people behind PanaboOne</p>
                     <h2 id="founders-heading">Meet our founders</h2>
                     <p>Meet the team working to bring local businesses and customers closer together.</p>
                 </div>
+                <!-- Founders grid -->
                 <div class="founders-grid">
                     <article class="founder-card">
+                        <!-- Rhush Khevin portrait -->
                         <img src="Assets/founders-1.jpg" alt="Portrait of founder Adrian Santos" loading="lazy">
+                        <!-- Rhush Khevin details -->
                         <div class="founder-info">
                             <h3>Rhush Khevin V. Acelo</h3>
                             <p>Founder</p>
                         </div>
                     </article>
                     <article class="founder-card">
+                        <!-- Ghian Avenido portrait -->
                         <img src="Assets/founders-2.jpg" alt="Portrait of founder Camille Reyes" loading="lazy">
+                        <!-- Ghian Avenido details -->
                         <div class="founder-info">
                             <h3>Ghian Engelbert M. Avenido</h3>
                             <p>Founder</p>
                         </div>
                     </article>
                     <article class="founder-card">
+                        <!-- Rheyan Tanawan portrait -->
                         <img src="Assets/founders-3.jpg" alt="Portrait of founder Marco Villanueva" loading="lazy">
+                        <!-- Rheyan Tanawan details -->
                         <div class="founder-info">
                             <h3>Rheyan Jules D. Tanawan</h3>
                             <p>Founder</p>
@@ -149,44 +184,62 @@
             </div>
         </section>
 
+        <!-- Services section -->
         <section id="services">
             <h1 >Services</h1>
+            <!-- Services grid -->
             <div id="carousel-container" class="services-grid">
+                <!-- E-commerce service -->
                 <div class="carousel-card">
+                    <!-- E-commerce icon -->
                     <img class="service-icons" src="Assets/App Window.png" alt="e-commerce icon">
+                    <!-- E-commerce preview -->
                     <div class="carousel-img-container">
                         <img  class="service-img" src="Assets/storefront.png" alt="e-commerce platform">
                     </div>
+                    <!-- E-commerce details -->
                     <div class="carousel-description">
                         <h2>E-commerce Platform</h2>
                         <p>Create a free digital storefront to showcase your products and make it easier for Panabo customers to browse your business online.</p>
                     </div>
                 </div>
+                <!-- Advertising service -->
                 <div class="carousel-card">
+                    <!-- Advertising icon -->
                     <img class="service-icons" src="Assets/Ad Circle.png" alt="e-commerce icon">
+                    <!-- Advertising preview -->
                     <div class="carousel-img-container">
                         <img  class="service-img" src="Assets/advertisements.png" alt="e-commerce platform">
                     </div>
+                    <!-- Advertising details -->
                     <div class="carousel-description">
                         <h2>Advertising Platform</h2>
                         <p>Share promotions and business updates through digital ads that help local customers discover what your business offers.</p>
                     </div>
                 </div>
+                <!-- Poster generator service -->
                 <div class="carousel-card">
+                    <!-- Poster icon -->
                     <img class="service-icons" src="Assets/Layout Collage.png" alt="e-commerce icon">
+                    <!-- Poster preview -->
                     <div class="carousel-img-container">
                         <img  class="service-img" src="Assets/Promotional-generation.png" alt="e-commerce platform">
                     </div>
+                    <!-- Poster details -->
                     <div class="carousel-description">
                         <h2>Promotional Poster Generator</h2>
                         <p>Design eye-catching posters for your products, events, and special offers, ready to share with your community.</p>
                     </div>
                 </div>
+                <!-- Listings service -->
                 <div class="carousel-card">
+                    <!-- Listings icon -->
                     <img class="service-icons" src="Assets/Shopping Cart.png" alt="e-commerce icon">
+                    <!-- Listings preview -->
                     <div class="carousel-img-container">
                         <img  class="service-img" src="Assets/product-list.png" alt="e-commerce platform">
                     </div>
+                    <!-- Listings details -->
                     <div class="carousel-description">
                         <h2>Product &amp; Service Listings</h2>
                         <p>Showcase your products and services with clear listings so customers can easily explore what your business offers.</p>
@@ -196,11 +249,17 @@
 
         </section>
 
+        <!-- Contact section -->
         <section id="contact" aria-labelledby="contact-heading">
+            <!-- Contact layout -->
             <div class="contact-layout">
+                <!-- Contact introduction -->
                 <div class="contact-intro">
+                    <!-- Contact brand -->
                     <div class="contact-brand">
+                        <!-- Contact brand logo -->
                         <img src="Assets/Logo-v2.png" alt="">
+                        <!-- Contact brand name -->
                         <div>
                             <h2>Panabo<span>One</span></h2>
                             <p>Advertise smarter. Sell faster.</p>
@@ -209,22 +268,27 @@
                     <p class="contact-eyebrow">Here for local business</p>
                     <h2 id="contact-heading">Let’s put your business in the spotlight.</h2>
                     <p class="contact-description">Have a question? Our team is ready to help you take the next step toward a digital storefront.</p>
-                    <a class="contact-cta" href="https://panaboone.vercel.app/CreateAccount/createAccount.html" target="_blank">Get started <span aria-hidden="true">&rarr;</span></a>
+                    <!-- Contact call to action -->
+                    <a class="contact-cta" href="https://yanyanui.github.io/PanaboOne/CreateAccount/createAccount.html" target="_blank">Get started <span aria-hidden="true">&rarr;</span></a>
                 </div>
+                <!-- Contact details -->
                 <div class="contact-details">
                     <p class="contact-details-eyebrow">We’d love to hear from you</p>
                     <h3>Talk with our team</h3>
                     <ul>
                         <li>
                             <span>Email</span>
+                            <!-- Email link -->
                             <a href="mailto:panaboone@gmail.com">panaboone@gmail.com</a>
                         </li>
                         <li>
                             <span>Phone</span>
+                            <!-- Phone link -->
                             <a href="tel:+639123455678">0912 345 5678</a>
                         </li>
                         <li>
                             <span>Facebook page</span>
+                            <!-- Facebook link -->
                             <a href="https://www.facebook.com/profile.php?id=61596672921674" target="_blank"><p>PanaboOne (Official Page)</p></a>
                         </li>
                     </ul>
@@ -232,77 +296,100 @@
             </div>
         </section>
 
+        <!-- Lead capture section -->
         <section id="lead-capture" aria-labelledby="lead-capture-heading">
+            <!-- Lead capture copy -->
             <div class="lead-capture-copy">
                 <p class="lead-capture-eyebrow">A digital storefront for your business</p>
                 <h2 id="lead-capture-heading">Start selling online with PanaboOne</h2>
                 <p>Leave your details and our team will follow up about your free digital storefront.</p>
             </div>
             <form id="lead-form">
+                <!-- Name field -->
                 <label for="lead-name">Name</label>
                 <input id="lead-name" name="name" type="text" autocomplete="name" required>
 
+                <!-- Email field -->
                 <label for="lead-email">Email address</label>
                 <input id="lead-email" name="email" type="email" autocomplete="email" required>
 
+                <!-- Submit request -->
                 <button type="submit">Get My Free Storefront</button>
                 <p class="lead-form-note">Submitting opens your email app with your request ready to send.</p>
             </form>
         </section>
 
+        <!-- Final call to action -->
         <section id="final-cta" aria-labelledby="final-cta-heading">
             <h2 id="final-cta-heading">Ready to grow your business?</h2>
             <p>Get your free digital storefront and start reaching more local customers.</p>
-            <a href="https://panaboone.vercel.app/CreateAccount/createAccount.html" target="_blank">Get Started</a>
+            <!-- Final account link -->
+            <a href="https://yanyanui.github.io/PanaboOne/CreateAccount/createAccount.html" target="_blank">Get Started</a>
         </section>
+        <!-- Community showcase -->
         <div class="home-cont">
+            <!-- Showcase heading -->
             <div class="showcase-heading">
                 <p class="showcase-eyebrow">PanaboOne in the community</p>
                 <h2>Real conversations. Local businesses. Bigger possibilities.</h2>
                 <p>Meet the business owners who shared their ideas and explored the platform with us.</p>
             </div>
+            <!-- Community carousel -->
             <div class="home-slideshow" id="home-slideshow" role="region" aria-label="PanaboOne interviews and platform testing" aria-roledescription="carousel">
+                <!-- Carousel track -->
                 <div class="slideshow-track">
+                    <!-- Primary slideshow set -->
                     <div class="slideshow-set">
                         <figure class="slideshow-slide">
+                            <!-- Community meeting -->
                             <img src="Assets/CV2.jpg" alt="Community members meeting with the PanaboOne team">
                             <figcaption><span>Community interview</span>Listening to local business owners</figcaption>
                         </figure>
                         <figure class="slideshow-slide">
+                            <!-- Platform viewing -->
                             <img src="Assets/CV10.jpg" alt="Community members viewing the PanaboOne platform">
                             <figcaption><span>Platform walkthrough</span>Exploring PanaboOne together</figcaption>
                         </figure>
                         <figure class="slideshow-slide">
+                            <!-- Laptop feedback -->
                             <img src="Assets/CV6.jpg" alt="A community member using a laptop during a PanaboOne visit">
                             <figcaption><span>Local user feedback</span>Ideas that help shape the experience</figcaption>
                         </figure>
                         <figure class="slideshow-slide">
+                            <!-- Community demo -->
                             <img src="Assets/CV3.jpg" alt="The PanaboOne team speaking with community members">
                             <figcaption><span>Community demo</span>Bringing local businesses online</figcaption>
                         </figure>
                         <figure class="slideshow-slide">
+                            <!-- Promotional image -->
                             <img src="Assets/promote-img.jpg" alt="PanaboOne promotional image featuring local businesses">
                             <figcaption><span>Made for Panabo</span>A brighter way to be discovered</figcaption>
                         </figure>
                     </div>
+                    <!-- Repeated slideshow set -->
                     <div class="slideshow-set" aria-hidden="true">
                         <figure class="slideshow-slide">
+                            <!-- Repeated community meeting -->
                             <img src="Assets/CV2.jpg" alt="">
                             <figcaption><span>Community interview</span>Listening to local business owners</figcaption>
                         </figure>
                         <figure class="slideshow-slide">
+                            <!-- Repeated platform viewing -->
                             <img src="Assets/CV10.jpg" alt="">
                             <figcaption><span>Platform walkthrough</span>Exploring PanaboOne together</figcaption>
                         </figure>
                         <figure class="slideshow-slide">
+                            <!-- Repeated laptop feedback -->
                             <img src="Assets/CV6.jpg" alt="">
                             <figcaption><span>Local user feedback</span>Ideas that help shape the experience</figcaption>
                         </figure>
                         <figure class="slideshow-slide">
+                            <!-- Repeated community demo -->
                             <img src="Assets/CV3.jpg" alt="">
                             <figcaption><span>Community demo</span>Bringing local businesses online</figcaption>
                         </figure>
                         <figure class="slideshow-slide">
+                            <!-- Repeated promotional image -->
                             <img src="Assets/promote-img.jpg" alt="">
                             <figcaption><span>Made for Panabo</span>A brighter way to be discovered</figcaption>
                         </figure>
@@ -313,17 +400,26 @@
     </main>
     <script src="index.js"></script>
     <footer id="site-footer">
+        <!-- Footer main content -->
         <div class="footer-main">
+            <!-- Footer brand link -->
             <a class="footer-brand" href="#home" aria-label="PanaboOne home">
+                <!-- Footer brand logo -->
                 <img src="Assets/Logo-v2.png" alt="">
                 <strong>Panabo<span>One</span></strong>
             </a>
+            <!-- Footer contact links -->
             <address class="footer-contact">
+                <!-- Footer email link -->
                 <a href="mailto:panaboone@gmail.com">panaboone@gmail.com</a>
+                <!-- Footer phone link -->
                 <a href="tel:+639123455678">0912 345 5678</a>
             </address>
+            <!-- Footer legal links -->
             <nav class="footer-legal" aria-label="Legal">
+                <!-- Privacy policy link -->
                 <a href="./Privacy-Terms/privacy-policy.html">Privacy Policy</a>
+                <!-- Terms of use link -->
                 <a href="./Privacy-Terms/terms-of-use.html">Terms of Use</a>
             </nav>
         </div>

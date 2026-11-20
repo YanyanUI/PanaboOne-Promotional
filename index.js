@@ -1,9 +1,11 @@
+// Navigation controls
 const menuBtn = document.getElementById('nav-btn');
 const nav = document.getElementById('nav');
 const navOverlay = document.getElementById('nav-overlay');
 const desktopNav = window.matchMedia('(min-width: 900px)');
 let overlayHideTimeout;
 
+// Sync desktop and mobile navigation
 const syncNavLayout = () => {
     window.clearTimeout(overlayHideTimeout);
 
@@ -21,6 +23,7 @@ const syncNavLayout = () => {
     nav.setAttribute('aria-hidden', 'true');
 };
 
+// Close mobile navigation
 const closeNav = (restoreFocus = true) => {
     nav.classList.remove('nav-visible');
     nav.setAttribute('aria-hidden', 'true');
@@ -38,6 +41,7 @@ const closeNav = (restoreFocus = true) => {
     }
 };
 
+// Open mobile navigation
 const openNav = () => {
     window.clearTimeout(overlayHideTimeout);
     navOverlay.hidden = false;
@@ -66,15 +70,18 @@ nav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => closeNav(false));
 });
 
+// Close navigation with Escape
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') {
         closeNav();
     }
 });
 
+// Scroll reveal settings
 const sectionsToReveal = [...document.querySelectorAll('main > section')];
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+// Promotional video playback
 const homeVideo = document.querySelector('.home-video-player');
 
 if (homeVideo) {
@@ -108,6 +115,7 @@ if (homeVideo) {
     }
 }
 
+// Reveal sections on scroll
 if ('IntersectionObserver' in window && !motionPreference.matches) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
@@ -138,6 +146,7 @@ if ('IntersectionObserver' in window && !motionPreference.matches) {
     });
 }
 
+// Lead form email submission
 const leadForm = document.getElementById('lead-form');
 
 leadForm.addEventListener('submit', (event) => {
